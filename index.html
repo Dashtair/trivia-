@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TRIVIA</title>
+	<Link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h1> Trivia game</h1>
+		<section class="main-section">
+			<h1 class="rules">The Rules</h1>
+			<p class="rules">There are 5 questions, you have 50 seconds to answer all 5 questions.</p>
+			<h2>
+				<button type="button" id="start-button">Start</button>
+		<div id="result">
+			<h2> YOU scored: Not yet attempted</h2>
+			</div>
+		</div>
+		<div class="body">
+			<form name="quiz" onsubmit="return onSubmit()">
+				<div class="question">
+					<h1> 1. What is the capital of Kazakhstan?</h1>
+					<input type="radio" name="q1" value="a">a. ASTANA<br>
+					<input type="radio" name="q1" value="b">b.ALMATY<br>
+					<input type="radio" name="q1" value="c">c.  WASHINGTON<br>
+					<input type="radio" name="q1" value="d">d. TOKYO<br>
+				</div>
+				<div class="question">
+				 <h1> 2.Who wrote "Harry Potter"?</h1>
+					<input type="radio" name="q2" value="a">a. A.S.Banderous<br>
+					<input type="radio" name="q2" value="b">b. M.Tetcher<br>
+					<input type="radio" name="q2" value="c">c. M.Donald<br>
+					<input type="radio" name="q2" value="d">d. J.K.Rowling<br>
+				</div>
+				<div class="question">
+					<h1>3.What kind of fish make red caviar?</h1>
+					<input type="radio" name="q3" value="a">a. Beluga<br>
+					<input type="radio" name="q3" value="b">b. Salmon<br>
+					<input type="radio" name="q3" value="c">c. Shark<br>
+					<input type="radio" name="q3" value="d">d. Bangus<br>
+				</div>
+				
+				<div class="question">
+				<h1>4.The largest city in the world ranked by population?</h1>
+					<input type="radio" name="q4" value="a">a. Cleveland, USA<br>
+					<input type="radio" name="q4" value="b">b. Tokyo, Japan<br>
+					<input type="radio" name="q4" value="c">c. Delhi, India<br>
+					<input type="radio" name="q4" value="d">d. Moscow, Russia<br>
+				</div>
+
+				<div class="question">
+					<h1>5.The most populated country in South America?</h1>
+					<input type="radio" name="q5" value="a">a. Peru <br>
+					<input type="radio" name="q5" value="b">b. Brazil<br>
+					<input type="radio" name="q5" value="c">c. Ecuador<br>
+					<input type="radio" name="q5" value="d">d. Argentina<br>
+				</div>
+				<button type="submit">Submit Test</button>
